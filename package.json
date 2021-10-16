@@ -1,0 +1,25 @@
+{
+  "name": "lucky-market-warehouse-manager",
+  "version": "1.0.0",
+  "description": "The Official Management Software of the LMK-Warehouse",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node main.js",
+    "start": "nodemon --experimental-modules main.js"
+  },
+  "keywords": [],
+  "author": "James W",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.10",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  }
+}
