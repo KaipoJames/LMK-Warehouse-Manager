@@ -6,4 +6,4 @@
  - Users can also make shipment requests to extract a number of items from the warehouse.
 
 ### LMK-Home
-    - [LMK-Home Org](https://github.com/KaipoJames/LMK-Home)
+  - [LMK-Home Org](https://github.com/KaipoJames/LMK-Home)
