@@ -1,4 +1,4 @@
-import { createID } from "../utils/util.js";
+import { createID } from "../../utils/util.js";
 
 /**
  * This class is our representation of a product.

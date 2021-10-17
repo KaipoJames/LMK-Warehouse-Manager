@@ -1,5 +1,5 @@
 import pkg from "./database/warehouse.js";
-import ProductRequest from "./models/productRequest.js";
+import ProductRequest from "./models/productRequest.js.js";
 
 /**
  * An attempt to locate and get an product from the warehouse.
@@ -9,7 +9,7 @@ import ProductRequest from "./models/productRequest.js";
  * @returns An array of products
  */
 const retrieveProducts = (request) => {
-  const { products, quantities, weights, sizes } = pkg;
+  const { products } = pkg;
 
   let product = {}; // The product to generate and return
   let productInfo = "";
@@ -18,9 +18,9 @@ const retrieveProducts = (request) => {
   // If a specific product is requested, return that one. Otherwise, return a random one.
   if (!request || request === null) {
     const randomCategory = getRandomKey(products);
-    const randomQuantity = getRandomKey(quantities);
-    const randomWeight = getRandomKey(weights);
-    const randomSize = getRandomKey(sizes);
+    //const randomQuantity = getRandomKey(quantities);
+    //const randomWeight = getRandomKey(weights);
+    //const randomSize = getRandomKey(sizes);
 
     console.info("Request not given. Returning a random product");
     productInfo = getProductsFromStore(products, "random", randomCategory);
