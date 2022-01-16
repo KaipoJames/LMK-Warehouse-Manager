@@ -9,7 +9,7 @@ export const productsProcessor = {
   getParsedProducts() {
     let products = [];
     try {
-      const file = path.join(__dirname, "..", "data-sources", "products.json");
+      const file = path.join(__dirname, "..", "..", "data-sources", "products.json");
       console.log("PATH: " + file);
       const importedProducts = JSON.parse(
         fs.readFileSync(file, "utf8")

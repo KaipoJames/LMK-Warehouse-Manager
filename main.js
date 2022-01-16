@@ -2,13 +2,14 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
-import router from "./app/config/routes/routes.js";
+import router from "./app/back-end/config/routes/routes.js";
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.use("/", router);
 
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

@@ -5,8 +5,10 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node main.js",
-    "start": "nodemon --experimental-modules main.js"
+    "node-dev": "nodemon --experimental-modules --es-module-specifier-resolution=node main.js",
+    "start": "nodemon --experimental-modules main.js",
+    "client": "cd app && cd front-end && npm start",
+    "develop": "concurrently \"npm start\" \"npm run client\""
   },
   "keywords": [],
   "author": "James W",
@@ -20,6 +22,7 @@
     "nodemon": "^2.0.13"
   },
   "devDependencies": {
+    "concurrently": "^6.3.0",
     "eslint": "^8.0.1"
   },
   "proxy": "http://localhost:5000"
